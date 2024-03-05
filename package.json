@@ -4,12 +4,13 @@
   "description": "",
   "main": "./utils/createJwt.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest ./tests --verbose"
+    "test": "./node_modules/.bin/jest ./tests --verbose --setupFiles=dotenv/config"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.6.7"
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "jest": "^29.7.0"

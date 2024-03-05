@@ -1,7 +1,7 @@
 const { get, post } = require('../utils/axiosHelper');
 
 // Define the API URL for the createJWT API endpoint
-const API_URL = "https://script.google.com/macros/s/AKfycbz6lf_Ej_33jNWooE54wzAW8FSqYhkexkEmEAAwOtJ0MvoSxl_BHBmAS5RLQ8lUzFM/exec";
+const API_URL = process.env.CREATE_JWT_END_POINT;
 
 describe("Testing createJwt API", () => {
 

@@ -1,7 +1,7 @@
 const { get, post } = require('../utils/axiosHelper');
 
 // Define the API URL for the verifyJwt API endpoint
-const API_URL = "https://script.google.com/macros/s/AKfycbwJf7fRudKVMXWsMhAwYTnrMdF6hY3LCy4KW55P5x1f4-qxgtLRjl0v65fWORZ-yihdnw/exec";
+const API_URL = process.env.VERIFY_JWT_END_POINT;
 
 describe("Testing verifyJwt API", () => {
 
